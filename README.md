@@ -59,7 +59,7 @@ the example directory contains a genome fasta file of _E.coli_, run  ```runme.sh
 ```
 $ cd ./example
 
-$ bash ./runme.sh 2 eco.fasta
+$ bash ./runme.sh eco.fasta
 ```
 This should output a network with 5 pairs of genes if you check the .sif file in Cytoscape.
 
@@ -92,8 +92,11 @@ use the fq2fa command of IDBA_UD to convert them to a single fasta file. Interle
 
 ## Flags
 -f: Specifies input file name. File should be a single fasta format file, but file name is not important. 
+
 -a: Assembly mode. For preassembled files use n or N, for reads (single end or interleaved paired ends) us y or Y
+
 -p: Gene prediction method. For Prokka use pka or prokka, for metagenemark (if installed) use gmk or genemark
+
 -l: Read length: If assembly mode is on, the IDBA_UD will default to short read mode, which can also be specified by using n. for long reads (>600bp) use y
 
 ## Output
